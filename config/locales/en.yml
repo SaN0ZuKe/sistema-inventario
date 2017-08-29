@@ -1,0 +1,277 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  support:
+    array:
+      last_word_connector: " y "
+      two_words_connector: " y "
+      words_connector: ", "
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: alrededor de 1 hora
+        other: alrededor de %{count} horas
+      about_x_months:
+        one: alrededor de 1 mes
+        other: alrededor de %{count} meses
+      about_x_years:
+        one: alrededor de 1 año
+        other: alrededor de %{count} años
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_minutes:
+        one: menos de 1 minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: más de 1 año
+        other: más de %{count} años
+      x_days:
+        one: 1 día
+        other: "%{count} días"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mes
+        other: "%{count} meses"
+      x_years:
+        one: 1 año
+        other: "%{count} años"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+    prompts:
+      day: Día
+      hour: Hora
+      minute: Minutos
+      month: Mes
+      second: Segundos
+      year: Año
+  activerecord:
+    models:
+      harddrive:
+        one: Disco duro
+        other: Discos duros
+      warehouse:
+        one: Bodega
+        other: Bodegas
+      software:
+        one: aplicación
+        other: aplicaciones
+      printer:
+        one: Impresora
+        other: Impresoras
+      user:
+        one: Usuario
+        other: Usuarios
+      worker:
+        one: Funcionario
+        other: Funcionarios
+      computer:
+        one: Computador
+        other: Computadores
+      screen:
+        one: Monitor
+        other: Monitores
+      task:
+        one: tarea
+        other: tareas
+      char:
+        one: caracteristica
+        other: caracteristicas
+      datashow:
+        one: Proyector
+        other: Proyectores
+      document:
+        one: información de pago
+        other: información de pagos
+      charprinter:
+        one: caracteristica
+        other: caracteristicas
+      provider:
+        one: proveedor
+        other: proveedores
+  admin:
+    js:
+      true: Verdadero
+      false: Falso
+      is_present: Presente
+      is_blank: En blanco
+      date: Fecha ...
+      between_and_: Entre ... y ...
+      today: Hoy
+      yesterday: Ayer
+      this_week: Esta semana
+      last_week: Semana pasada
+      number: Numero ...
+      contains: Contiene
+      is_exactly: Es exactamente
+      starts_with: Comienza con
+      ends_with: Termina con
+      too_many_objects: "Demasiados objetos, utilize el buscador de abajo"
+      no_objects: "Objetos no encontrados"
+    loading: "Cargando..."
+    toggle_navigation: Activar navegación
+    home:
+      name: "Inicio"
+    pagination:
+      previous: "&laquo; Anterior"
+      next: "Siguiente &raquo;"
+      truncate: "…"
+    misc:
+      search: "Buscar"
+      filter: "Filtro"
+      refresh: "Actualizar"
+      show_all: "Mostrar todo"
+      add_filter: "Agregar filtro"
+      bulk_menu_title: "Items seleccionados"
+      remove: "Quitar"
+      add_new: "Agregar nueva"
+      chosen: "Escoger %{name}"
+      chose_all: "Escoger todo"
+      clear_all: "Limpiar todo"
+      up: "Arriba"
+      down: "Abajo"
+      navigation: "Navegación"
+      navigation_static_label: "Enlaces"
+      log_out: "Cerrar sesión"
+      ago: "atras"
+      more: "Más %{count} más %{models_name}"
+    flash:
+      successful: "%{name} correctamente %{action}"
+      error: "%{name} no pudo ser %{action}"
+      noaction: "Sin cambios realizados"
+      model_not_found: "El modelo '%{model}' no pudo ser encontrado"
+      object_not_found: "%{model} con el id, '%{id}', no fue encontrado"
+    table_headers:
+      model_name: "Nombre del modelo"
+      last_created: "Ultimo creado"
+      records: "Registros"
+      username: "Usuario"
+      changes: "Cambios"
+      created_at: "Fecha/Hora"
+      item: "Item"
+      message: "Mensaje"
+    actions:
+      dashboard:
+        title: "Sitio administrativo"
+        menu: "Dashboard"
+        breadcrumb: "Dashboard"
+      index:
+        title: "Lista de %{model_label_plural}"
+        menu: "Lista"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Detalles para %{model_label} '%{object_label}'"
+        menu: "Mostrar"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Mostrar en aplicación"
+      new:
+        title: "Nuevo %{model_label}"
+        menu: "Agregar nuevo"
+        breadcrumb: "Nuevo"
+        link: "Agregar nueva %{model_label}"
+        done: "Creado"
+      edit:
+        title: "Editar %{model_label} '%{object_label}'"
+        menu: "Editar"
+        breadcrumb: "Editar"
+        link: "Editar este %{model_label}"
+        done: "actualizado"
+      delete:
+        title: "Eliminar %{model_label} '%{object_label}'"
+        menu: "Eliminar"
+        breadcrumb: "Eliminar"
+        link: "Eliminar '%{object_label}'"
+        done: "Eliminado"
+      bulk_delete:
+        title: "Eliminado %{model_label_plural}"
+        menu: "Eliminado multiple"
+        breadcrumb: "Multiple eliminado"
+        bulk_link: "Eliminar %{model_label_plural}"
+      export:
+        title: "Exportar %{model_label_plural}"
+        menu: "Exportar"
+        breadcrumb: "Exportar"
+        link: "Exportar %{model_label_plural}"
+        bulk_link: "Exportar %{model_label_plural}"
+        done: "Exportado"
+      history_index:
+        title: "Historial para %{model_label_plural}"
+        menu: "Historial"
+        breadcrumb: "Historial"
+      history_show:
+        title: "Historial para %{model_label} '%{object_label}'"
+        menu: "Historial"
+        breadcrumb: "Historial"
+    form:
+      cancel: "Cancelar"
+      basic_info: "información basica"
+      required: "Requerido"
+      optional: "Opcional"
+      one_char: "Caracter"
+      char_length_up_to: "Longitud hasta"
+      char_length_of: "longitud de"
+      save: "Guardar"
+      save_and_add_another: "Guardar y agregar otro"
+      save_and_edit: "Guardar y editar"
+      all_of_the_following_related_items_will_be_deleted: "?, Los siguientes elementos relacionados se pueden eliminar:"
+      are_you_sure_you_want_to_delete_the_object: "Esta seguro que quiere eliminar "
+      confirmation: "Si, estoy seguro"
+      bulk_delete: "Se eliminarán los siguientes objetos, que pueden eliminar algunas de sus dependencias relacionadas:"
+      new_model: "%{name} (Nuevo)"
+    export:
+      confirmation: "Exportar a %{name}"
+      select: "Seleccionar campos a exportar"
+      select_all_fields: "Seleccionar todos los campos"
+      fields_from: "Campos para %{name}"
+      fields_from_associated: "Campos para la asociación %{name}"
+      display: "Mostrar %{name}: %{type}"
+      options_for: "Opciones para %{name}"
+      empty_value_for_associated_objects: "<vacio>"
+      click_to_reverse_selection: 'Click para revertir selección'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Codificar a"
+        encoding_to_help: "Elija la codificación de salida. Dejar vacío para dejar intacta la codificación de entrada actual: (%{name})"
+        skip_header: "Sin encabezado"
+        skip_header_help: "No emite un encabezado (sin descripción de campos)"
+        default_col_sep: ","
+        col_sep: "Separador de columna"
+        col_sep_help: "Dejar en blanco para valor por defecto ('%{value}')" # value is default_col_sep

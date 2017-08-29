@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  produc: MyString
+  stock: MyString
+  unit_value: MyString
+  total_value: MyString
+  date: 2017-08-28
+  observation: MyText
+
+two:
+  code: MyString
+  produc: MyString
+  stock: MyString
+  unit_value: MyString
+  total_value: MyString
+  date: 2017-08-28
+  observation: MyText
